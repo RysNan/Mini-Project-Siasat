@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "398444057702",
+    "project_id": "siasatapp-53d00",
+    "storage_bucket": "siasatapp-53d00.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398444057702:android:3196ff834e601b79ff49a7",
+        "android_client_info": {
+          "package_name": "com.rys.siasat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATrNOGXI8XsXV9Ib7Of7D1fe3m0WlWXkw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
