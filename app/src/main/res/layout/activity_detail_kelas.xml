@@ -5,35 +5,51 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".DosenDashboardActivity">
+    tools:context=".DetailKelasActivity">
 
     <TextView
+        android:id="@+id/textViewDetailNamaMk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dashboard Dosen"
+        android:text="Nama Mata Kuliah (KODE)"
         android:textSize="22sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textViewNamaDosen"
+        android:id="@+id/textViewDetailPeriode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Selamat Datang, [Nama Dosen]"
+        android:text="Periode: Memuat..."
         android:textSize="16sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:layout_marginBottom="8dp"
-        android:text="Mata Kuliah yang Anda Ampu:"
+        android:text="Daftar Peserta Kelas:"
         android:textStyle="bold" />
 
+    <Button
+        android:id="@+id/buttonInputAbsensi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Input Absensi Hari Ini" />
+
+    <Button
+        android:id="@+id/buttonInputNilai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttonInputAbsensi"
+        android:layout_marginHorizontal="16dp"
+        android:text="Input Nilai Mahasiswa" />
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewKelasDosen"
+        android:id="@+id/recyclerViewMahasiswa"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/list_item_kelas_dosen" />
+        tools:listitem="@layout/list_item_mahasiswa_dosen" />
 
 </LinearLayout>

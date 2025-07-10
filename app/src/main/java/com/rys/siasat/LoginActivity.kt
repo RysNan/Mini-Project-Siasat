@@ -62,33 +62,26 @@ class LoginActivity : AppCompatActivity() {
         val userRef = database.getReference("users").child(uid)
         userRef.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                // Ambil role dari database
                 val role = snapshot.child("role").getValue(String::class.java)
 
-                // Arahkan ke halaman yang sesuai berdasarkan role
+                // Arahkan ke dashboard yang sesuai
                 when (role) {
                     "mahasiswa" -> {
-                        Toast.makeText(baseContext, "Login sebagai Mahasiswa berhasil!", Toast.LENGTH_SHORT).show()
                         startActivity(Intent(this@LoginActivity, MahasiswaDashboardActivity::class.java))
                     }
                     "dosen" -> {
-                        Toast.makeText(baseContext, "Login sebagai Dosen berhasil!", Toast.LENGTH_SHORT).show()
                         startActivity(Intent(this@LoginActivity, DosenDashboardActivity::class.java))
                     }
                     "kaprodi" -> {
-                        Toast.makeText(baseContext, "Login sebagai Kaprodi berhasil!", Toast.LENGTH_SHORT).show()
                         startActivity(Intent(this@LoginActivity, KaprodiDashboardActivity::class.java))
                     }
                     else -> {
-                        Toast.makeText(baseContext, "Role tidak ditemukan!", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(baseContext, "Role tidak dikenali!", Toast.LENGTH_SHORT).show()
                     }
                 }
-                finish()
+                finish() // Tutup activity login setelah berhasil
             }
-
-            override fun onCancelled(error: DatabaseError) {
-                Toast.makeText(baseContext, "Gagal mengambil data role: ${error.message}", Toast.LENGTH_SHORT).show()
-            }
+            override fun onCancelled(error: DatabaseError) {}
         })
     }
 }

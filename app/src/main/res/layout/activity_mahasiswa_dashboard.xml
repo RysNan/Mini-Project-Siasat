@@ -1,17 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
     android:padding="16dp"
     tools:context=".MahasiswaDashboardActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Selamat Datang, Mahasiswa!"
+        android:text="Dashboard Mahasiswa"
         android:textSize="22sp"
         android:textStyle="bold" />
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/textViewNamaMahasiswa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="32dp"
+        android:text="Selamat Datang, [Nama Mahasiswa]"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonKrs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Isi Kartu Rencana Studi (KRS)" />
+
+    <Button
+        android:id="@+id/buttonLihatKhs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Lihat Kartu Hasil Studi (KHS)" />
+
+    <Button
+        android:id="@+id/buttonLihatAbsensi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lihat Riwayat Absensi" />
+
+</LinearLayout>

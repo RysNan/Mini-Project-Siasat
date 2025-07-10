@@ -5,35 +5,29 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".DosenDashboardActivity">
+    tools:context=".KrsActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dashboard Dosen"
+        android:text="Kartu Rencana Studi (KRS)"
         android:textSize="22sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textViewNamaDosen"
+        android:id="@+id/textViewPeriodeAktif"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Selamat Datang, [Nama Dosen]"
-        android:textSize="16sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"
-        android:text="Mata Kuliah yang Anda Ampu:"
-        android:textStyle="bold" />
+        android:layout_marginBottom="16dp"
+        android:text="Periode Aktif: Memuat..."
+        android:textSize="16sp"
+        android:textStyle="italic" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewKelasDosen"
+        android:id="@+id/recyclerViewKrs"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/list_item_kelas_dosen" />
+        tools:listitem="@layout/list_item_krs" />
 
 </LinearLayout>

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,27 +13,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Siasat">
-        <activity
-            android:name=".KaprodiDashboardActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DosenDashboardActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MahasiswaDashboardActivity"
-            android:exported="false" />
+
         <activity
             android:name=".LoginActivity"
             android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="false"/>
+
+        <activity android:name=".MainActivity" android:exported="false" />
+        <activity android:name=".MahasiswaDashboardActivity" android:exported="false" />
+        <activity android:name=".DosenDashboardActivity" android:exported="false" />
+        <activity android:name=".KaprodiDashboardActivity" android:exported="false" />
+        <activity android:name=".KelolaPeriodeActivity" android:exported="false" />
+        <activity android:name=".KelolaMatkulActivity" android:exported="false" />
+        <activity android:name=".KrsActivity" android:exported="false" />
+        <activity android:name=".KhsActivity" android:exported="false" />
+        <activity android:name=".RiwayatAbsensiActivity" android:exported="false" />
+        <activity android:name=".DetailKelasActivity" android:exported="false" />
+        <activity android:name=".AbsensiActivity" android:exported="false" />
+        <activity android:name=".InputNilaiActivity" android:exported="false" />
+
     </application>
 
 </manifest>

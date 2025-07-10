@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Siasat</string>
+    <string name="pilih_dosen">Pilih Dosen Pengampu</string>
+    <string name="pilih_periode">Pilih Periode</string>
 </resources>

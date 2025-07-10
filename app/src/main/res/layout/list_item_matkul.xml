@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/border_outline">
+
+    <TextView
+        android:id="@+id/textViewNamaMk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Mata Kuliah (TC001)"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewSks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="3 SKS" />
+
+    <TextView
+        android:id="@+id/textViewDosen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Dosen: Dr. Budi Santoso" />
+
+    <TextView
+        android:id="@+id/textViewPeriode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Periode: Semester Ganjil 2025/2026"
+        android:textStyle="italic" />
+
+</LinearLayout>

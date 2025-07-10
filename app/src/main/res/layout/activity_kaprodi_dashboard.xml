@@ -1,17 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
     android:padding="16dp"
     tools:context=".KaprodiDashboardActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Selamat Datang, Kaprodi!"
+        android:text="Dashboard Kaprodi"
         android:textSize="22sp"
         android:textStyle="bold" />
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/textViewNamaKaprodi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="32dp"
+        android:text="Selamat Datang, [Nama Kaprodi]"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonKelolaPeriode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Kelola Periode Akademik" />
+
+    <Button
+        android:id="@+id/buttonKelolaMatkul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kelola Mata Kuliah" />
+
+</LinearLayout>
